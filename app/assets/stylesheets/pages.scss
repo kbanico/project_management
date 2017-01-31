@@ -1,3 +1,70 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url('https://fonts.googleapis.com/css?family=Barrio|Raleway');
+
+body{
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 60px;
+
+}
+
+.jumbotron{
+  background:image_url("guam.jpg")no-repeat center center;
+  background-size:cover;
+  color:white;
+  height:370px;
+  position:relative;
+}
+
+.overlay{
+  background: rgba(0,0,0,0.5);
+  width:100%;
+  height:100%;
+  margin:0;
+  padding:0;
+  position:absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  right:0;
+}
+
+.logo{
+  font-family: 'Barrio', cursive;
+
+}
+
+.navbar-brand{
+  font-family: 'Barrio', cursive;
+  font-size:30px;
+}
+
+.navbar-default .navbar-brand {
+    color: rgb(98,52,69);
+}
+
+.navbar-default{
+  background-color:white;
+}
+
+.nav.navbar-nav.navbar-right li a {
+    color: rgb(98,52,69);
+    font-family: 'Raleway', sans-serif;
+    font-size:17px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: rgb(98,52,69);
+}
+
+.footer p{
+  margin-top:20px;
+  color:white;
+}
