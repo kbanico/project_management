@@ -23,7 +23,7 @@
 '.html_safe, task_path(task), method: :delete, data:{confirm: "Are You Sure?"}, class: "pull-right" %>
     </div>
 
-  <div class="panel-body"><%= task.content %></div>
+  <div class="panel-body"><%= raw(task.content_html) %></div>
   <div class="panel-footer text-center">
      <% if task.state == 'doing' %>
      <!-- # link left for :to_do -->
