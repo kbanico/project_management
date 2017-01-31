@@ -4,9 +4,31 @@
 
 @import url('https://fonts.googleapis.com/css?family=Barrio|Raleway');
 
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: rgb(98,52,69);
+;
+}
+
 body{
   font-family: 'Raleway', sans-serif;
   margin-bottom: 60px;
+  background: image_url("background.jpg") no-repeat center center fixed;
+  background-size:cover;
 
 }
 
@@ -55,16 +77,12 @@ body{
     font-size:17px;
 }
 
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  background-color: rgb(98,52,69);
-}
 
 .footer p{
   margin-top:20px;
   color:white;
+}
+
+.clear{
+  clear:both;
 }
